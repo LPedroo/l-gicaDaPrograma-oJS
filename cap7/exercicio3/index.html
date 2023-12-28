@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercício 3</title>
+    <style>
+      body {
+        text-align: center;
+      }
+      .oculta {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Veterinária Avenida</h1>
+    <hr />
+    <p>Valor da Vacina: <input type="text" id="inValue" /></p>
+    <br />
+    <p>
+      Possui Convénio:
+      <input type="radio" name="convenio" id="convYes" />Sim
+      <input type="radio" name="convenio" id="conNo" checked />Não
+      <br />
+      <br />
+      <select class="oculta" id="inYes">
+        <option value="vazio">-----</option>
+        <option value="primeiroDesc">Amigo dos Animais</option>
+        <option value="segundoDesc">Saúde Animal</option>
+      </select>
+      <select class="oculta" id="inNo">
+        <option value="vazio"></option>
+      </select>
+    </p>
+    <button id="addDesc">Calcular Desconto</button>
+    <hr />
+    <h3 id="preDesc"></h3>
+    <h3 id="preValue"></h3>
+    <script src="./main.js"></script>
+  </body>
+</html>

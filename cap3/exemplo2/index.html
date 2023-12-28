@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exemplo do Cap 3</title>
+  </head>
+  <style>
+    img { float: left; height: 300px; width: 300px; }
+   h1 { border-bottom-style: inset; }
+   .container{ padding-left: 30%;}
+  </style>
+  <body>
+    <img src="./images.png" alt="teste">
+    <div class="container">
+    <h1>Calcular Peso Ideal</h1>
+    <p>Nome:<Input type="text" id="nome"></Input></p>
+    <br>
+    <p>Sexo: 
+    <Input  type="radio" name="sexo" id="masculino" >Masculino</Input>
+    <Input  type="radio" name="sexo" id="feminino">Feminino</Input>
+    </p>
+    <br>
+    <p>Altura:
+    <input type="number" id="altura">
+    </p>
+    <br>
+    <button type="submit" id="exibirPeso">Calcular Peso</button>
+    <button type="submit" id="limpar">Limpar Campo</button>
+    <br>
+    <h3 id="resultadoPeso"></h3>
+    <br>
+   </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
