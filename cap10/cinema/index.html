@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <title>Reserva de Poltronas</title>
+  </head>
+  <body>
+    <div class="container-flui">
+      <div class="row">
+        <div class="col-md-6 offset-md-3 mt-5">
+          <h1>Teatro: Show Musical - Reserva de Poltronas</h1>
+          <div class="row">
+            <div class="col-md-2">
+              <p>
+                <label for="inPoltrona">N° da Poltrona</label>
+                <input
+                  type="text"
+                  class="form-control aDireita"
+                  id="inPoltrona"
+                />
+              </p>
+            </div>
+            <div class="col-md-4">
+              <input
+                type="button"
+                class="btn btn-primary margemSup"
+                value="Reservar"
+                id="btReservar"
+              />
+              <input
+                type="button"
+                class="btn btn-danger margemSup"
+                value="Confirmar"
+                id="btConfirmar"
+              />
+            </div>
+            <div class="col-md-6">
+              <p>Legenda:</p>
+              <p>
+                <img src="./img/disponivel.jpg" alt="Disponível" /> Disponível
+                <img src="./img/reservada.jpg" alt="Reservada" /> Reservada
+                <img src="./img/ocupada.jpg" alt="Ocupada" /> Ocupada
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12" id="divPalco">
+              <p class="bg-primary text-white text-center">Palco do Teatro</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- JS -->
+    <script src="./main.js"></script>
+    <!-- Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
