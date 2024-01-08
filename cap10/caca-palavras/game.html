@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <title>Descubra a Palavra</title>
+  </head>
+  <body>
+    <div class="container-flui">
+      <div class="row">
+        <div class="col-md-6 offset-md-3 mt-5">
+          <h1>Jogo: Descubra a Palavra</h1>
+
+          <a href="./index.html" class="btn btn-primary">Cadastrar Palavra</a>
+          <a href="./list.html" class="btn btn-success">Listar Palavras</a>
+          <a href="./game.html" class="btn btn-danger">Iniciar Jogo</a>
+          <div class="row margemJogo">
+            <div class="col-md-4 corFundo">
+              <h2 class="aDireita">
+                <label for="inLetra">Informe uma letra: </label>
+              </h2>
+            </div>
+            <div class="col-md-2 corFundo">
+              <input
+                type="text"
+                class="form-control margemJogo"
+                id="inLetra"
+                autofocus
+              />
+            </div>
+            <div class="col-md-6 corFundo">
+              <input
+                type="button"
+                class="btn btn-primary margemJogo"
+                value="Jogar"
+                id="btJogar"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-8">
+              <h2>
+                Palavra:
+                <span id="outPalavra" class="entreLetras fonteAzul"></span>
+              </h2>
+              <h2>
+                N° Chances:
+                <span id="outChances" class="entreLetras fonteVermelha"></span>
+              </h2>
+              <h2>
+                Erros:
+                <span id="outErros" class="entreLetras fonteVermelha"></span>
+              </h2>
+              <h2 id="outMensagemFinal"></h2>
+            </div>
+            <div class="col-md-4 bordaQuadro">
+              <h3>Situação do Jogador</h3>
+              <img
+                src=""
+                alt="Situação do Jogador"
+                id="imgStatus"
+                class="imgProg"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 corFundo margemDica">
+              <input
+                type="button"
+                value="Ver Dica"
+                class="btn btn-primary"
+                id="btVerDica"
+              />
+              <span id="outDica">* Custo: 1 chance</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- JS -->
+    <script src="./src/game.js"></script>
+    <!-- Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
